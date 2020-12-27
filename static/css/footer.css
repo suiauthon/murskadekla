@@ -1,0 +1,140 @@
+.footer_main {
+    height: 6em;
+    background-repeat: repeat-x;
+    background-size: 62em;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.footer_main .social_network {
+    display: flex;
+}
+
+.footer_main .copyright {
+    color: rgba(255,255,255,0.75);
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .footer_main  {
+        flex-direction: column;
+        padding-top: 2em;
+    }
+
+    .footer_main .social_network {
+        margin-top: 0.2em;
+        margin-bottom: 0em;
+    }
+
+    .footer_main .copyright {
+        margin-top: 1em;
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer_main  {
+        flex-direction: row;
+        padding-top: 0em;
+    }
+
+    .footer_main .social_network {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .footer_main .copyright {
+        margin-top: 2.2em;
+        text-align: right;
+        width: 42em;
+    }
+}
+
+.footer_main .copyright > a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer_main .copyright > a:hover {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: initial;
+}
+
+#facebook_footer {
+    width: 1.8em;
+    height: 1.8em;
+    background-repeat: no-repeat;
+    margin-right: 0.6em;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#twitter_footer {
+    width: 1.8em;
+    height: 1.8em;
+    background-repeat: no-repeat;
+    margin-right: 0.6em;
+    opacity: 0.75;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+#youtube_footer {
+    width: 1.8em;
+    height: 1.8em;
+    background-repeat: no-repeat;
+    margin-right: 0.6em;
+    opacity: 0.75;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+#instagram_footer {
+    width: 1.8em;
+    height: 1.8em;
+    background-repeat: no-repeat;
+    margin-right: 0.6em;
+    opacity: 0.75;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+#mail_footer {
+    width: 1.8em;
+    height: 1.8em;
+    background-repeat: no-repeat;
+    margin-right: 0.6em;
+    opacity: 0.75;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+#facebook_footer:hover, #facebook_footer:focus {
+    opacity: 1;
+    outline: none;
+}
+
+#twitter_footer:hover, #twitter_footer:focus {
+    opacity: 1;
+    outline: none;
+}
+
+#youtube_footer:hover, #youtube_footer:focus {
+    opacity: 1;
+    outline: none;
+}
+
+#instagram_footer:hover, #instagram_footer:focus {
+    opacity: 1;
+    outline: none;
+}
+
+#mail_footer:hover, #mail_footer:focus {
+    opacity: 1;
+    outline: none;
+}

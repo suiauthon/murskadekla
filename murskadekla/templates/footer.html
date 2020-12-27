@@ -1,0 +1,25 @@
+{% load static %}
+
+<footer class="footer_main" style="background-image: url({% static 'img/navigation_bar_bottom_wide.svg' %});">
+    <div class="social_network">
+        <a id="facebook_footer" target="_blank" style="background-image: url({% static 'img/facebook.svg' %});"></a>
+        <a id="twitter_footer" target="_blank" style="background-image: url({% static 'img/twitter.svg' %});"></a>
+        <a id="youtube_footer" target="_blank" style="background-image: url({% static 'img/Youtube.svg' %});"></a>
+        <a id="instagram_footer" target="_blank" style="background-image: url({% static 'img/Instagram.svg' %});"></a>
+        <a id="mail_footer" style="background-image: url({% static 'img/mail.svg' %});"></a>
+    </div>
+    <p class="copyright">
+        Copyright © {{ YEAR }} Murska Dekla Gin. &nbsp;All Rights Reserved.
+        <br>Please Enjoy Responsibly |&nbsp;
+        <a href="{% url 'public:privacy_policy' %}">
+            <strong>Privacy Policy</strong>
+        </a>
+        &nbsp;|&nbsp;
+        <a href="{% url 'public:terms_and_conditions' %}">
+            <strong>Terms and Conditions</strong>
+        </a>
+        .<br>
+    </p>
+
+</footer>
+

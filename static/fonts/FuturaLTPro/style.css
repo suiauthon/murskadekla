@@ -1,0 +1,174 @@
+    @font-face {
+    font-family: 'Futura LT Pro Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Book'), url('FuturaLTProBook.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Display';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Display'), url('FuturaLTProDisplay.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Book Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Book Oblique'), url('FuturaLTProBookOblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Light'), url('FuturaLTProLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Light Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Light Condensed'), url('FuturaLTProLightCond.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Light Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Light Condensed Oblique'), url('FuturaLTProLightCondObl.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Light Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Light Oblique'), url('FuturaLTProLightOblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Medium'), url('FuturaLTProMedium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Medium Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Medium Condensed'), url('FuturaLTProMediumCond.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Medium Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Medium Condensed Oblique'), url('FuturaLTProMediumCondObl.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Medium Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Medium Oblique'), url('FuturaLTProMediumOblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Bold'), url('FuturaLTProBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Bold Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Bold Condensed'), url('FuturaLTProBoldCond.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Bold Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Bold Oblique'), url('FuturaLTProBoldOblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Bold Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Bold Condensed Oblique'), url('FuturaLTProBoldCondObl.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Extra Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Extra Bold'), url('FuturaLTProXBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Extra Bold Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Extra Bold Condensed'), url('FuturaLTProXBoldCond.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Extra Bold Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Extra Bold Condensed Oblique'), url('FuturaLTProXBoldCondObl.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Extra Bold Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Extra Bold Oblique'), url('FuturaLTProXBoldOblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Black'), url('FuturaLTProBlack.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Heavy'), url('FuturaLTProHeavy.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura LT Pro Heavy Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Pro Heavy Oblique'), url('FuturaLTProHeavyOblique.woff') format('woff');
+    }

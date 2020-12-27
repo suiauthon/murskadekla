@@ -1,0 +1,32 @@
+<!-- templates/base.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Murska Dekla gin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/logo_16.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/logo_32.png' %}">
+    <link rel="icon" type="image/png" sizes="180x180" href="{% static 'img/logo_180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'img/logo_192.png' %}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{% static 'img/logo_512.png' %}">
+    <link rel="stylesheet" href="{% static 'fonts/CopperPennyDTP/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/FuturaLTPro/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <script src="{% static 'js/jquery-3.5.1.js' %}"></script>
+    <script src="{% static 'js/document_ready.js' %}"></script>
+    <script src="{% static 'js/links.js' %}"></script>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% include 'footer.html' %}
+</body>
+</html>
