@@ -2,18 +2,59 @@
 
 <nav class="navbar" style="background-image: url({% static 'img/navigation_bar_top_wide.svg' %});">
     <div class="navbar-frame">
-        <div class="logo-container">
-            <div class="logo_frame">
-                <a class="navbar-brand" href="{% url 'public:index' %}" style="background-image: url({% static 'img/logo.svg' %});"></a>
-            </div>
-            <div>
-                sd
-            </div>
+        <div class="navbar-toggler" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <div class="collapse navbar-collapse" id="navcol-1">
-            dsakdjsa lkdjsalkd jsalkd jsalkdjsa ldjsa lkdjsadlk sadlksaj dlksa jlk jdlksalkaj
+        <div class="nabar-logo">
+            <a class="navbar-brand" href="{% url 'public:index' %}" style="background-image: url({% static 'img/logo.png' %});"></a>
         </div>
-        <div class="login-container">MARKO!!!!!</div>
+        <div class="navbar-collapse">
+            <ul class="navbar-nav middle_nav_bar">
+                <li class="nav-item">
+                    <a class="nav-link" id="our_story"><strong>OUR STORY</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="products"><strong>PRODUCTS</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="drinks"><strong>DRINKS</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="plant_a_tree"><strong>PLANT A TREE</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact"><strong>CONTACT</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="store"><strong>STORE</strong></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav user_navbar_mobile">
+                <li class="nav-item">
+                    <a class="nav-link" id="user_sign_in_sign_out_mobile"><strong>SIGN IN</strong></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav social_nav_bar">
+                <li class="nav-item">
+                    <a class="nav-link" id="facebook_navbar" target="_blank" style="background-image: url({% static 'img/facebook.svg' %});"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="instagram_navbar" target="_blank" style="background-image: url({% static 'img/instagram_active.svg' %});"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="user_nav_icons">
+            <ul class="navbar-nav user_navbar">
+                <li class="nav-item">
+                    <a class="nav-link" id="user_sign_in_sign_out"><strong>SIGN IN</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="shoping_cart" target="_blank" style="background-image: url({% static 'img/shoping_cart_active.svg' %});"></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
