@@ -1,7 +1,6 @@
 .footer_main {
-    height: 6em;
     background-repeat: repeat-x;
-    background-size: 62em;
+    background-size: 70em;
     background-color: #000000;
     display: flex;
     justify-content: center;
@@ -41,7 +40,7 @@
 @media (min-width: 768px) {
     .footer_main  {
         flex-direction: row;
-        padding-top: 0em;
+        padding-top: 0.5em;
     }
 
     .footer_main .social_network {
@@ -108,7 +107,7 @@
     width: 1.8em;
     height: 1.8em;
     background-repeat: no-repeat;
-    margin-right: 0.6em;
+    margin-right: 0em;
     opacity: 0.75;
     filter: invert(100%);
     cursor: pointer;

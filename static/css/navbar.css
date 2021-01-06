@@ -2,7 +2,7 @@
     background-repeat: repeat-x;
     background-position: bottom;
     background-color: #000000;
-    background-size: 62em;
+    background-size: 70em;
     min-width: 10em;
     display: -ms-flexbox!important;;
     display: flex!important;;
@@ -24,6 +24,7 @@
 
 .navbar-frame {
     width: 100%;
+    height: 100%;
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
@@ -32,65 +33,258 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
-}
-
-.logo-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .navbar .navbar-brand {
+    display: inline-block;
     background-repeat: no-repeat;
-    height: 6.2em;
-    margin-top: -0.48em;
-    margin-right: 0;
-    margin-bottom: -2.07em;
-    width: 6em;
     background-position: right;
-    padding-bottom: 0;
-    padding-top: 0;
     background-size: cover;
 }
 
-.logo_frame {
-    justify-content: center;
-    display: flex;
-    flex-grow: 1;
-}
-
-.collapse:not(.show) {
-    display: none;
-}
-
-.navbar-collapse {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-align: center;
-    align-items: center;
-}
-@media (min-width:768px) {
-  .navbar-collapse {
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    }
-}
-
-.nav {
+.navbar-nav {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    margin-top: 0;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255,255,255,0.75);
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 0.65rem;
+}
+
+.social_nav_bar {
+    flex-direction: row;
+    margin-left: 0.85em;
+    margin-bottom: 0.5em;
+}
+
+.user_navbar {
+    margin-bottom: 0.5em;
+}
+
+#facebook_navbar {
+    width: 0.2em;
+    height: 0.2em;
+    margin-right: 0.7em;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#instagram_navbar {
+    width: 0.2em;
+    height: 0.2em;
+    margin-right: 0.7em;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#shoping_cart {
+    width: 0.6em;
+    height: 0.6em;
+    margin-top: 0.1em;
+    margin-left: 0.5rem;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#facebook_navbar:hover, #facebook_navbar:focus {
+  opacity: 1;
+  outline: none;
+}
+
+#instagram_navbar:hover, #instagram_navbar:focus {
+  opacity: 1;
+  outline: none;
+}
+
+#shoping_cart:focus, #shoping_cart:hover {
+  opacity: 1;
+}
+
+.navbar-toggler .bar {
+    width: 20px;
+    height: 2px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (min-width: 963px) {
+    .nabar-logo {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        flex-direction: row;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        -ms-flex-positive: 1;
+        -ms-flex-align: end;
+        align-items: center;
+        justify-content: flex-end;
+        max-width: 10em;
+        min-width: 8.5em;
+        flex-grow: 1;
+    }
+
+    .navbar .navbar-brand {
+        margin-bottom: -2.07em;
+        width: 8em;
+        height: 8em;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        margin-top: 0;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+    }
+
+    .user_nav_icons {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        flex-direction: row;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        -ms-flex-positive: 1;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 2.95em;
+        max-width: 10em;
+        min-width: 8.5em;
+        flex-grow: 1;
+    }
+
+    .navbar-collapse {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        -ms-flex-positive: 1;
+        -ms-flex-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 2.95em;
+        margin-left: 1em;
+        margin-right: 1em;
+        max-width: 46em;
+        flex-grow: 1;
+    }
+
+    #user_sign_in_sign_out {
+        display: block;
+    }
+
+    .user_navbar_mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    .nabar-logo {
+        position: absolute;
+    }
+
+    .user_nav_icons {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        flex-direction: row;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        -ms-flex-positive: 1;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin-top: 1.6em;
+        margin-bottom: 0.9em;
+        flex-grow: 1;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        transform: translate(1em, 1.1em);
+    }
+
+    .navbar-toggler .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-toggler:hover {
+        cursor: pointer;
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 6em;
+        margin-left: 1em;
+    }
+
+    .navbar-nav.middle_nav_bar {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .navbar .navbar-brand {
+        width: 6em;
+        height: 6em;
+    }
+
+    .navbar.active {
+        height: auto;
+    }
+
+    .navbar.active {
+        height: 24em;
+    }
+
+    #user_sign_in_sign_out {
+        display: none;
+    }
+
+    .social_nav_bar {
+        margin-top: 0.5em;
+    }
+
+
 }
