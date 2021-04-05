@@ -38,7 +38,14 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "murskadekla.apps.accounts",
+    "murskadekla.apps.public",
 ]
+
+AUTH_USER_MODEL = 'accounts.User' # changes the built-in user model to ours
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.AllowAllUsersModelBackend',
+    'murskadekla.apps.accounts.backends.CaseInsensitiveModelBackend'
+)
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -55,7 +62,7 @@ ROOT_URLCONF = "murskadekla.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "murskadekla/templates"],
+        "DIRS": [os.path.join(BASE_DIR, "murskadekla/templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -77,7 +84,7 @@ WSGI_APPLICATION = "murskadekla.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
     }
 }
 
@@ -120,10 +127,36 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    os.path.join(BASE_DIR, "static"),
 ]
 
 # Django Auth Settings
 LOGIN_URL = "accounts:login"
 LOGIN_REDIRECT_URL = "public:index"
-LOGOUT_REDIRECT_URL = "public:index"
+#LOGOUT_REDIRECT_URL = "public:index"
+
+#EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_CONNECTIONS = {
+    'registration': {
+        'host': 'mail.blazar-tech.com',
+        'port': 465,
+        'username': 'marko.car@blazar-tech.com',
+        'password': 'markec246810',
+        'use_tls': False,
+        'use_ssl': True,
+    },
+    'contact': {
+        'host': 'mail.blazar-tech.com',
+        'port': 465,
+        'username': 'marko.car@blazar-tech.com',
+        'password': 'markec246810',
+        'use_tls': False,
+        'use_ssl': True,
+    },
+}
+EMAIL_CONNECTION_DEFAULT = 'contact'
+DEFAULT_FROM_EMAIL = "info@murskadekla.com"
+
+BASE_URL = 'http://127.0.0.1:8000'
+DEFAULT_ACTIVATION_DAYS = 2

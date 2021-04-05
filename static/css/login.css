@@ -1,0 +1,21 @@
+.login-background {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    min-height: 25em;
+    height: 70vh;
+}
+
+@media screen and (max-width: 962px) {
+    .login-page {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 963px) {
+    .login-page {
+        display: flex;
+        flex-direction: row;
+    }
+}

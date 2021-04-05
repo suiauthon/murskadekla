@@ -1,40 +1,3 @@
-<nav class="navbar navbar-light navbar-expand-md fixed-top text-break d-lg-flex">
-        <div class="container-fluid">
-            <div class="navigation_bar_frame">
-                <div id="div_logo_collapse">
-                    <div class="logo_and_button_frame">
-                        <div class="button_frame"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="margin-top: 0.25em;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" id="toggle_icon"></span></button></div>
-                        <div class="logo_frame">
-                            <a class="navbar-brand" href="/"></a>
-                        </div>
-                    </div>
-                    <div class="collapse_frame">
-                        <div class="collapse navbar-collapse" id="navcol-1">
-                            <ul class="nav navbar-nav mx-auto middle_nav_bar">
-                                <li class="nav-item" role="presentation"><a class="nav-link" id="our_story"><strong>OUR STORY</strong></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" id="products"><strong>PRODUCTS</strong></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" id="drinks"><strong>DRINKS</strong></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" id="find_us"><strong>FIND US</strong></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" id="contact"><strong>CONTACT</strong></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" id="store"><strong>STORE</strong></a></li>
-                            </ul>
-                            <ul class="nav navbar-nav social_nav_bar" style="margin-top: -0.4em;">
-                                <li class="nav-item" role="presentation"><a class="nav-link" id="facebook" data-toggle="tooltip" tooltip-data="Murska Dekla on Facebook" data-placement="bottom" target="_blank"></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" id="instagram" data-toggle="tooltip" tooltip-data="Murska Dekla on Instagram" data-placement="bottom" target="_blank"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div id="shoping_nav_icons">
-                    <ul class="nav navbar-nav right_navbar">
-                        <li class="nav-item" role="presentation" style="margin-right: 0.8em;"><a class="nav-link" id="profile_icon" href="google.com"></a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" id="shoping_cart" data-toggle="tooltip" data-placement="bottom" tooltip-data="Shopping cart" target="_blank"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-</nav>
-
 <div>
     <span><a href="{% url  'public:index' %}">Home</a></span>
     <span style="float: right">
@@ -55,15 +18,15 @@
   }
 }
 
-<footer class="d-flex justify-content-center footer_main">
-        <div id="footer_div" class="d-flex">
-            <div class="d-flex" id="social_footer">
-                <a id="facebook_footer" data-toggle="tooltip" tooltip-data="Murska Dekla on Facebook" target="_blank"></a>
-                <a id="twitter_footer" data-toggle="tooltip" tooltip-data="Murska Dekla on Twitter" target="_blank"></a>
-                <a id="youtube_footer" data-toggle="tooltip" tooltip-data="Murska Dekla on Youtube" target="_blank"></a>
-                <a id="instagram_footer" target="_blank" data-toggle="tooltip" tooltip-data="Murska Dekla on Instagram"></a>
-                <a id="mail_footer" data-toggle="tooltip" tooltip-data="Send us an email"></a>
-            </div>
-            <p id="copyright_footer" style="color: rgba(255,255,255,0.75);">Copyright © 2020 Murska Dekla Gin. &nbsp;All Rights Reserved.<br>Please Enjoy Responsibly |&nbsp;<a href="privacy_policy"><strong>Privacy Policy</strong></a>&nbsp;|&nbsp;<a href="terms_and_conditions"><strong>Terms and Conditions</strong></a>.<br></p>
-        </div>
-    </footer>
+
+#mobile-menu:is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile-menu:is-active .bar:nth-child(1){
+        transform: translate(8px);
+    }
+
+
+
+

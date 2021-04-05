@@ -1,9 +1,61 @@
 {% extends 'base.html' %}
-
-{% block title %}Contact{% endblock %}
+{% load static %}
 
 {% block content %}
-    <h1>
-        Contact Homepage
-    </h1>
+    <section class="white first">
+        <div class="col">
+            <div class="divider_with_text">
+                <div class="divider_line black" style="background-image: url({% static 'img/divider.svg' %});"></div>
+                <div class="divider_text black">CONTACT</div>
+                <div class="divider_line black" style="background-image: url({% static 'img/divider.svg' %});"></div>
+            </div>
+            <div class="row" id="contact_row">
+                <div class="contact-info-col" id="contact_info">
+                    <p class="heading_contact" style="background-image: url({% static 'img/line_top.svg' %})">ADDRESS</p>
+                    <p class="paragraph_conntact"><b>BLAZAR DISTILLERY</b><br>Prekopa 77<br>40312 Strigova, Croatia</p>
+                    <p class="heading_contact" style="background-image: url({% static 'img/line_top.svg' %})">EMAIL</p>
+                    <p class="paragraph_conntact">For all inquires: info@murskadekla.com</p>
+                    <p class="heading_contact" style="background-image: url({% static 'img/line_top.svg' %})">SOCIAL MEDIA</p>
+                    <p class="paragraph_conntact">Instagram: &nbsp; &nbsp;<a href="https://www.instagram.com/murskadekla/"><em>@murskadekla</em></a>
+                        <br>Twitter: &nbsp; &nbsp;<a href="https://twitter.com/murskadekla"><em>@murskadekla</em></a>
+                        <br>Youtube: &nbsp; &nbsp;<a href="https://www.youtube.com/channel/UCfNsn5DSPArA8Wy3rtljoIQ"><em>@murskadekla</em></a>
+                        <br>Facebook: &nbsp; &nbsp;<a href="https://www.facebook.com/murskadekla"><em>@murskadekla</em></a><br>
+                    </p>
+                    <p class="heading_contact" style="background-image: url({% static 'img/line_top.svg' %})">PRIVACY POLICY</p>
+                    <p class="paragraph_conntact">You can review our privacy policy <a href="{% url 'public:privacy_policy' %}">here</a></p>
+                </div>
+                <div class="contact-info-col" id="contact_image">
+                    <img src="{% static 'img/contact-map.png' %}">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="black">
+        <div class="plain_divider white big" style="background-image: url({% static 'img/divider.svg' %});"></div>
+        <div class="col">
+            <form id="contact-form" class="md-contact-form" method="post">
+                {% csrf_token %}
+
+                {% for field in form %}
+                    <div class="md-form-group">
+                        <div class="md-contact-form-col">
+                            {{ field.label_tag }}
+                            {{ field }}
+                            {% for error in field.errors %}
+                                <p class="md-contact-help-block">{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="md-form-group">
+                    <div class="md-contact-form-col">
+                        <button class="md-button-light" type="submit" style="border-image-source: url({% static 'img/border_black.svg' %});">Send us your message!</button>
+                    </div>
+                </div>
+                {% if success %}
+                    <p class="md-contact-form-successful">Contact form successfully submitted.  Thank you, We will get back to you soon.</p>
+                {% endif %}
+            </form>
+        </div>
+    </section>
 {% endblock %}

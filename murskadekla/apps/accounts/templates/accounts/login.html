@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="white first login-background" style="background-image: url({% static 'img/login_wallpaper.jpg' %})">
+        <div class="row">
+            {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+            <div class="login-page">
+                <div class="login-container">
+                    <h1>
+                        Login
+                    </h1>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div class="register-container">
+                    <h1>
+                        sdasdasdas
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

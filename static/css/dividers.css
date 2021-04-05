@@ -1,0 +1,55 @@
+.divider_with_text {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.divider_with_text > .divider_line {
+    display: flex;
+    flex-grow: 1;
+    background-repeat: repeat-x;
+    background-size: 1.5em;
+    background-position: center;
+    height: 4em;
+}
+
+.divider_with_text > .divider_text {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 0px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.divider_text.black {
+    color: rgb(0, 0, 0);
+}
+
+.divider_text.black {
+    color: rgba(0, 0, 0, 1);
+}
+
+.divider_text.white {
+    color: rgba(255, 255, 255, 1);
+}
+
+.divider_line.white {
+    filter: invert(100%);
+}
+
+.plain_divider {
+  background-repeat: repeat-x;
+  background-position: top;
+  width: 100%;
+}
+
+.plain_divider.white {
+    filter: invert(75%);
+}
+
+.plain_divider.big {
+  height: 4em;
+  background-size: 1.8em;
+  margin-top: 2.4em;
+}

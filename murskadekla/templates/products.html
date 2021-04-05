@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
-
-{% block title %}Products{% endblock %}
+{% load static %}
 
 {% block content %}
-    <h1>
-        Products Homepage
-    </h1>
+    <section class="white">
+        <div class="products banner" style="background-image: url({% static 'img/products_banner.jpg' %})"></div>
+        <div class="plain_divider big" style="background-image: url({% static 'img/divider.svg' %});"></div>
+    </section>
 {% endblock %}

@@ -1,0 +1,12 @@
+.md-button-light {
+    font-family: "Futura LT Pro Book";
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0 0 0 0;
+    background: rgb(255, 255, 255);
+    border: 0.5em solid transparent;
+    border-image-repeat: stretch;
+    border-image-slice: 49%;
+    cursor: pointer;
+    outline: none !important;
+    box-shadow: none !important;
+}

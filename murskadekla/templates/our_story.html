@@ -1,9 +1,22 @@
 {% extends 'base.html' %}
-
-{% block title %}Our story{% endblock %}
+{% load static %}
 
 {% block content %}
-    <h1>
-        Our story Homepage
-    </h1>
+    <section class="white">
+        <div class="our_story cover_container" style="background-image: url({% static 'img/our_story_banner.jpg' %})"></div>
+        <div class="plain_divider big" style="background-image: url({% static 'img/divider.svg' %});"></div>
+    </section>
+
+    <section class="white">
+        <div class="our_story row">
+            <div class="our_story image_container"></div>
+            <div class="our_story text_container">
+                <p id="our_story_text">In early 2019, Blazar distillery was founded in the Croatian region of Medimurje, in a small picturesque town of Prekopa. In the end of 2019, the combination of enthusiasm, curiosity and persistence of the three founding friends resulted
+                    in the release of a unique gin on the young Croatian craft spirits scene, Murska Dekla London dry gin. Using traditional copper pot stills, we produce our spirits manually in small batches. Each bottle is produced with equal care.<br></p>
+                <p
+                    id="our_story_text">In addition to the commitment to traditional distillation techniques, using local origin ingredients is an essential guiding principle in our production process. We take great care to only use organically grown herbs and spices. With a
+                    carefully selected mix of ingredients and an exclusive recipe, our spirits gain a full taste and first-class quality that we are proud of.</p>
+            </div>
+        </div>
+    </section>
 {% endblock %}
