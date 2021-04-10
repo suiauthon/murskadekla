@@ -39,9 +39,9 @@
 }
 
 .plain_divider {
-  background-repeat: repeat-x;
-  background-position: top;
-  width: 100%;
+    background-repeat: repeat-x;
+    background-position: top;
+    width: 100%;
 }
 
 .plain_divider.white {
@@ -49,7 +49,25 @@
 }
 
 .plain_divider.big {
-  height: 4em;
-  background-size: 1.8em;
-  margin-top: 2.4em;
+    height: 4em;
+    background-size: 1.8em;
+    margin-top: 2.4em;
+}
+
+.plain_divider.small {
+    height: 2em;
+    background-size: 1em;
+    margin-top: 1.2em;
+}
+
+.second_divider {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 2em;
+    background-size: 17em;
+    min-width: 10em;
+}
+
+.second_divider.white {
+    filter: invert(100%);
 }

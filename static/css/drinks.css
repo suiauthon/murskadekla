@@ -1,0 +1,70 @@
+.row.md-drinks {
+    flex-wrap: wrap;
+}
+
+.md-coctail-container {
+    position: relative;
+}
+
+.md-drinks-image {
+    vertical-align: middle;
+    width: 95%;
+    padding: 0.5em;
+    opacity: 0.8;
+}
+
+.md-cocktail-name > a {
+    color: rgb(255, 255, 255);
+}
+
+.md-cocktail-name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.md-cocktail-recipe {
+    position: absolute;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.md-cocktail-recipe.bottom {
+    left: 20px;
+    bottom: 20px;
+    text-align: left;
+}
+
+@media (max-width: 962px) {
+    .md-drinks-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .md-cocktail-recipe.top {
+        left: 20px;
+        bottom: 20px;
+        top: initial;
+        right: initial;
+        text-align: left;
+    }
+}
+
+@media (min-width: 963px) {
+    .md-drinks-column {
+        flex: 33%;
+        max-width: 33%;
+    }
+
+    .md-cocktail-recipe.top {
+        top: 100px;
+        right: 20px;
+        text-align: right;
+    }
+}

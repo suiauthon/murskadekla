@@ -19,6 +19,10 @@
     font-size: 12px;
 }
 
+.footer_main .copyright > a {
+    text-decoration: initial;
+}
+
 @media (max-width: 767px) {
     .footer_main  {
         flex-direction: column;

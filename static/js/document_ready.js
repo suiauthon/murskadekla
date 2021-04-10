@@ -3,6 +3,9 @@ $(document).ready(function () {
 
     //stavlja sve href na linkove
     links_setup();
+
+    //provjera da li korisnik ima 18 godina
+    check_legal_age();
 });
 
 function navbar_setup() {
@@ -19,5 +22,25 @@ function navbar_setup() {
             item.classList.toggle('active');
         })
     });
+}
+
+function check_legal_age() {
+    if (document.cookie.indexOf("is_legal=true")<0) {
+        $('body').addClass('md-modal-open');
+        $('#drinkingLegalAge').addClass('show');
+         //Modal has been shown, now set a cookie so it never comes back
+        $("#drinkingAgeModalYes").click(function () {
+        //    $('.modal-backdrop').hide(); // for black background$('body').removeClass('modal-open'); // For scroll run
+            $('body').removeClass('md-modal-open'); // For scroll run
+            $("#drinkingLegalAge").removeClass("show");
+            var CookieDate = new Date;
+            CookieDate.setFullYear(CookieDate.getFullYear() +1);
+            document.cookie = "is_legal=true; expires=" + CookieDate.toGMTString() + "; path=/";
+        });
+
+        $("#drinkingAgeModalNo").click(function () {
+            window.location.assign('https://facebook.com/murskadekla')
+        });
+    }
 }
 

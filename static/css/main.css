@@ -48,13 +48,13 @@ section {
     align-items: center;
 }
 
-@media screen and (max-width: 962px) {
+@media (max-width: 962px) {
     section.first {
         padding-top: 8em;
     }
 }
 
-@media screen and (min-width: 963px) {
+@media (min-width: 963px) {
     section.first {
         padding-top: 10em;
     }

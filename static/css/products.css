@@ -5,3 +5,169 @@
     height: 80vh;
     width: 100%;
 }
+
+.md-product {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.md-product-image {
+    display: flex;
+    width: 100%;
+}
+
+.md-product-herbs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+.md-product-herb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.md-product-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.md-product-text .heading {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 35em;
+    font-size: 20px;
+    text-align: left;
+}
+
+.md-product-text .content {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.md-product-text .second_divider {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.md-awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    flex-direction: row;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+.md-awards .award-image {
+    width: 20%;
+    margin-left: -4%;
+}
+
+@media (min-width: 963px) {
+    .md-product-image-container {
+        max-width: 20%;
+        flex: 20%;
+    }
+
+    .md-product-herbs {
+        max-width: 20%;
+        flex: 20%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .md-product-herb {
+        max-width: 100%;
+        flex: 100%;
+        flex-direction: row;
+    }
+
+    .md-ldg .md-product-herb > img {
+        width: 30%;
+    }
+
+    .md-otg .md-product-herb > img {
+        width: 24%;
+    }
+
+    .md-product-herb > p {
+        width: 70%;
+        text-align: left;
+        margin-bottom: 0px;
+        margin-left: 1em;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .md-product-text {
+        max-width: 50%;
+        flex: 50%;
+    }
+}
+
+@media (max-width: 962px) {
+    .md-product-image-container {
+        max-width: 30%;
+        flex: 30%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .md-product-herbs {
+        max-width: 100%;
+        flex: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .md-ldg .md-product-herb {
+        max-width: 25%;
+        flex: 25%;
+        flex-direction: column;
+    }
+
+    .md-otg .md-product-herb {
+        max-width: 20%;
+        flex: 20%;
+        flex-direction: column;
+    }
+
+    .md-product-herb > img {
+        width: 50%;
+    }
+
+    .md-product-text{
+        max-width: 100%;
+        flex: 100%;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 962px) {
+    .md-product-herb > p {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .md-product-herb > p {
+        width: 100%;
+        text-align: center;
+        font-size: 8px;
+    }
+}

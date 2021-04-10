@@ -1,7 +1,32 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-    <section style="height: 1000px">
-        Drinks Homepage
+    <section class="black first">
+        <div class="row md-drinks">
+            <div id="drinks_first_column" class="md-drinks-column">
+                <div class="md-coctail-container">
+                    <img id="french_75_image" class="md-drinks-image" src="{% static 'img/french_75.jpg' %}">
+                    <p class="md-cocktail-name"><strong>FRENCH 75</strong><br><a href="https://www.facebook.com/cocktailsbyshankeri">@shankeri</a></p>
+                    <p id="french_75_recipe" class="md-cocktail-recipe top">Murska Dekla Gin 40ml<br>Fresh Lemon Juice 20ml<br>Sugar Syrup 20ml<br>Sparkling Wine 50ml</p>
+                </div>
+            </div>
+            <div id="drinks_second_column" class="md-drinks-column">
+                <div class="md-coctail-container"><img id="bramble_image" class="md-drinks-image" src="{% static 'img/bramble.jpg' %}">
+                    <p class="md-cocktail-name"><strong>BRAMBLE</strong><br><a href="https://www.facebook.com/cocktailsbyshankeri">@shankeri</a><br></p>
+                    <p id="bramble_recipe" class="md-cocktail-recipe bottom">Murska Dekla Gin 40ml<br>Sugar Syrup 10ml<br>Fresh Lemon Juice 20ml<br>Crème De Cassis 20ml</p>
+                </div>
+                <div class="md-coctail-container"><img id="gin_cup_image" class="md-drinks-image" src="{% static 'img/gin_cup.jpg' %}">
+                    <p class="md-cocktail-name"><strong>GIN</strong>&nbsp;CUP<br><a href="https://www.facebook.com/cocktailsbyshankeri">@shankeri</a><br></p>
+                    <p id="gin_cup_recipe" class="md-cocktail-recipe bottom">Murska Dekla Gin 30ml<br>Pimm's 20ml<br>Ginger Ale 100ml<br>Seasons Fruit<br></p>
+                </div>
+            </div>
+            <div id="drinks_third_column" class="md-drinks-column">
+                <div class="md-coctail-container"><img id="raspberry_lemonade_image" class="md-drinks-image" src="{% static 'img/raspberry_lemonade.jpg' %}">
+                    <p class="md-cocktail-name"><strong>RASPBERRY&nbsp;LEMONADE</strong><br><a href="https://www.facebook.com/cocktailsbyshankeri">@shankeri</a></p>
+                    <p id="raspberry_lemonade_recipe" class="md-cocktail-recipe top">Murska Dekla Gin 40ml<br>Sugar Syrup 20ml<br>Fresh Lemon Juice 20ml<br>Crème De Cassis 10ml<br>Ginger Ale 100ml<br>Raspberries<br></p>
+                </div>
+            </div>
+        </div>
     </section>
 {% endblock %}

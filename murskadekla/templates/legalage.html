@@ -1,0 +1,23 @@
+{% load static %}
+<div class="md-modal" role="dialog" tabindex="-1" id="drinkingLegalAge" data-keyboard="false" data-backdrop="static">
+    <div class="md-modal-dialog md-modal-dialog-centered" role="document">
+        <div class="md-modal-content" id="legal_age_modal_content">
+            <div class="md-modal-body" id="legal_age_modal_body">
+                <div class="md-modal-header">
+                    <img id="legalAgeImage" src="{% static 'img/legal_age_logo.svg' %}" width="200em">
+                        <div>
+                            <p id="legal_age_paragraph_q">ARE YOU OF LEGAL <br>DRINKING AGE TO <br>JOIN THE ADVENTURE?<br></p>
+                            <div id="button_div_legal_age">
+                                <button class="md-button-light" id="drinkingAgeModalYes" type="button" style="border-image-source: url({% static 'img/border_black.svg' %});">YES</button>
+                                <button class="md-button-light" id="drinkingAgeModalNo" type="button" style="border-image-source: url({% static 'img/border_black.svg' %});">NO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-modal-footer" id="legal_age_modal_footer" style="background-image: url({% static 'img/navigation_bar_bottom_wide.svg' %});">
+                    <p id="legal_age_footer">You must be of legal drinking age in your country&nbsp;to view this website. Please Enjoy Responsibly.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
