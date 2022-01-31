@@ -7,9 +7,22 @@ from .forms import ContactForm
 from murskadekla import settings
 
 import datetime
+import hashlib
 
 def index(request):
-    print(request.user)
+    year = str(datetime.datetime.now().year)
+    month = str(datetime.datetime.now().month)
+    day = str(datetime.datetime.now().day)
+    hour = str(datetime.datetime.now().hour)
+    minute = str(datetime.datetime.now().minute)
+    second = str(datetime.datetime.now().second)
+    microsecond = str(datetime.datetime.now().microsecond)
+    gtin = '03857000002827'
+    lot = 'L0121'
+
+    a = year + month + day + hour + minute + second + microsecond + gtin + lot
+    print(a)
+    print(hashlib.shake_256(a.encode()).hexdigest(4))
     args = {}
     args["YEAR"] = datetime.datetime.now().year
 
@@ -29,7 +42,6 @@ def products(request):
 
 def drinks(request):
     return render(request, "drinks.html")
-
 
 def contact(request: HttpRequest) -> HttpResponse:
     args = {}

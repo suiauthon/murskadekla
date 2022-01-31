@@ -2,8 +2,22 @@
 {% load static %}
 
 {% block content %}
-    <section style="height: 1000px">
-        Template Homepage
-
+    <section class="white">
+        <div class="md-main-banner" style="background-image: url({% static 'img/DSCF5707_velika.jpg' %})">
+            <p class="md-banner-text">FEEL THE WHISPER OF NATURE.</p>
+        </div>
+        <div class="plain_divider big" style="background-image: url({% static 'img/divider.svg' %});"></div>
+        <div class="md-legend-div">
+            <p class="md-quotation">"</p>
+            <p class="md-legend"><em>Born from the spring dew on the shores of the river Mura, Murska Dekla is the spirit of water and goddess of nature.</em><br></p>
+            <div class="second_divider" style="background-image: url({% static 'img/split_line.svg' %});"></div>
+            <p class="md-slogan">Feel the whisper of nature through all your senses. Murska Dekla, like the river, forever flows.<br></p>
+        </div>
+    </section>
+    <section class="white">
+        <div class="plain_divider big" style="background-image: url({% static 'img/divider.svg' %});"></div>
+        <div class="md-main-contact">
+            <p class="text">If you wish to join our adventure, visit our <a href="{% url  'public:contact' %}">contact </a>page or drop an email at info@murskadekla.com.</p>
+        </div>
     </section>
 {% endblock %}

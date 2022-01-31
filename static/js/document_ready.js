@@ -6,6 +6,9 @@ $(document).ready(function () {
 
     //provjera da li korisnik ima 18 godina
     check_legal_age();
+
+    //plan a tree widget
+    plant_a_tree_widget();
 });
 
 function navbar_setup() {
@@ -21,6 +24,14 @@ function navbar_setup() {
         navbarMenu.forEach(function (item) {
             item.classList.toggle('active');
         })
+    });
+}
+
+function plant_a_tree_widget() {
+    const plant_a_tree_div = document.querySelector('#plant-a-tree');
+
+    plant_a_tree_div.addEventListener('click', function () {
+        plant_a_tree_div.classList.add('open');
     });
 }
 

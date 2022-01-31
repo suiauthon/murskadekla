@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="white">
+        <div class="md-plant-a-tree-cover" style="background-image: url({% static 'img/plant-a-tree-cover.jpg' %})">
+            <img class="logo" src="{% static 'img/logo_small_cheers_for_trees.svg' %}">
+            <p class="heading">CHEERS FOR TREES</p>
+            <p class="content">NESTO SA FEEL THE WHISPER OF NATURE</p>
+        </div>
+        <div class="plain_divider big" style="background-image: url({% static 'img/divider.svg' %});"></div>
+        <div class="md-plant-a-tree-numbers">
+            <div class="md-plant-a-tree-seedlings">
+                <img src="{% static 'img/plant-a-tree-seedling-green.svg' %}">
+                <div class="info">
+                    <p class="heading">Trees planted</p>
+                    <p class="number">120</p>
+                </div>
+            </div>
+            <div class="md-plant-a-tree-seedlings">
+                <img src="{% static 'img/plant-a-tree-seedling-yellow.svg' %}">
+                <div class="info">
+                    <p class="heading">Scheduled for this year</p>
+                    <p class="number">200</p>
+                </div>
+            </div>
+        </div>
+        <div class="plain_divider big" style="background-image: url({% static 'img/divider.svg' %});"></div>
+        <div>
+             <form method="post">
+                 {% csrf_token %}
+                 {{ form.as_p }}
+                 <button class="md-button-light" type="submit" style="border-image-source: url({% static 'img/border_black.svg' %});">Plant a tree!</button>
+            </form>
+        </div>
+    </section>
+    <section class="white">
+        <p>WHERE WE PLANT</p>
+        <div class="row">
+            <p>Marko je najbolji</p>
+            <p>marko je najbolji drugi puta</p>
+        </div>
+    </section>
+{% endblock %}

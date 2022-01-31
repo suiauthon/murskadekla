@@ -1,0 +1,189 @@
+.md-plant-a-tree-cover {
+    margin-top: 5.5em;
+    height: 70vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.md-plant-a-tree-cover .heading {
+    font-weight: bold;
+    margin: 0.5em 0px 0px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.md-plant-a-tree-cover .md-button-light {
+    background-color: transparent;
+    filter: invert(100%);
+}
+
+.md-plant-a-tree-cover .content {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 1em 0px 2em 0px;
+    color: rgb(255, 255, 255);
+}
+
+.md-plant-a-tree {
+    z-index: 1040;
+    position: fixed;
+    background-color: rgb(106, 157, 69);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.md-plant-a-tree.open {
+    border-radius: 2%;
+}
+
+.md-plant-a-tree > p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.md-plant-a-tree.open > p {
+    display: none;
+}
+
+.md-plant-a-tree-seedlings {
+    display: flex;
+    flex-direction: row;
+}
+
+.md-plant-a-tree-seedlings .info {
+    margin-left: 1em;
+}
+
+.md-plant-a-tree-seedlings .info .heading {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.md-plant-a-tree-seedlings .info .number {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.md-plant-a-tree-seedlings > img {
+    width: 4em;
+}
+
+.md-plant-a-tree-numbers {
+    display: flex;
+    max-width: 63em;
+    flex-grow: 1;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.md-plant-a-tree-key-input {
+    background: none;
+    display: block;
+    width: 16em;
+    padding: 3px 0 0;
+    border: none;
+    font-family: monospace;
+    font-size: 13px;
+    letter-spacing: 12px;
+}
+
+@media (max-width: 962px) {
+    .md-plant-a-tree-numbers {
+        flex-direction: column;
+    }
+
+    .md-plant-a-tree-cover .logo {
+        width: 8em;
+    }
+
+    .md-plant-a-tree-cover .heading {
+        font-size: 32px;
+    }
+
+    .md-plant-a-tree-cover .content {
+        font-size: 12px;
+    }
+
+    .md-plant-a-tree-cover > button {
+        font-size: 12px;
+        width: 12em;
+    }
+
+    .md-plant-a-tree-seedlings {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .md-plant-a-tree {
+        bottom: 4.5em;
+        right: 2.5em;
+        width: 6em;
+        height: 6em;
+    }
+
+    .md-plant-a-tree.open {
+        bottom: 4.5em;
+        right: 0em;
+        width: 8em;
+        height: 6em;
+    }
+}
+
+@media (min-width: 963px) {
+    .md-plant-a-tree-numbers {
+        flex-direction: row;
+    }
+
+    .md-plant-a-tree-cover .logo {
+        width: 15em;
+    }
+
+    .md-plant-a-tree-cover .heading {
+        font-size: 40px;
+    }
+
+    .md-plant-a-tree-cover .content {
+        font-size: 15px;
+    }
+
+    .md-plant-a-tree-cover > button {
+        font-size: 15px;
+        width: 15em;
+    }
+
+    .md-plant-a-tree {
+        bottom: 7em;
+        right: 5em;
+        width: 8.5em;
+        height: 8.5em;
+    }
+
+    .md-plant-a-tree.open {
+        bottom: 7em;
+        right: 0em;
+        width: 50%;
+        height: 8.5em;
+    }
+
+    .md-plant-a-tree-seedlings {
+        justify-content: center;
+        align-items: center;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+}

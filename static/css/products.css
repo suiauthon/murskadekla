@@ -1,4 +1,5 @@
 .products.banner {
+    margin-top: 5em;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70%;
@@ -45,15 +46,20 @@
 }
 
 .md-product-text .heading {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 35em;
     font-size: 20px;
+    color: rgba(0, 0, 0, 1.0);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 40em;
+    opacity: 1;
     text-align: left;
+    font-weight: bold;
+    margin-bottom: 0em;
+    margin-top: 0em;
 }
 
 .md-product-text .content {
-    margin-bottom: 0px;
+    margin-bottom: 1em;
     font-size: 14px;
 }
 
@@ -66,7 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5em;
+    height: auto;
     flex-direction: row;
     margin-top: 3em;
     margin-bottom: 1.5em;
@@ -75,6 +81,10 @@
 .md-awards .award-image {
     width: 20%;
     margin-left: -4%;
+}
+
+.award-image.first {
+    margin-left: 0px;
 }
 
 @media (min-width: 963px) {

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "murskadekla.apps.accounts",
     "murskadekla.apps.public",
+    "murskadekla.apps.plantatree",
 ]
 
 AUTH_USER_MODEL = 'accounts.User' # changes the built-in user model to ours
